@@ -3,38 +3,148 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Yoider_dev | Portafolio Ciberseguridad</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>Portafolio de Yoider_Dev</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+    }
+
+    header {
+      background-color: #1e1e1e;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      color: #00bfff;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #f0f0f0;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00bfff;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #00bfff;
+      border-bottom: 2px solid #00bfff;
+      padding-bottom: 5px;
+    }
+
+    .script-card {
+      background-color: #1e1e1e;
+      border: 1px solid #333;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 8px;
+    }
+
+    .script-card h3 {
+      margin-top: 0;
+    }
+
+    .btn {
+      background-color: #00bfff;
+      color: #000;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #009acd;
+    }
+
+    footer {
+      background-color: #1e1e1e;
+      text-align: center;
+      padding: 20px;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
-  <div class="terminal">
-    <h1>👨‍💻 Yoider_dev - Portafolio Ciberseguridad</h1>
-    <p>> Bienvenido a mi portafolio estilo terminal</p>
 
-    <section>
-      <h2>📄 Sobre mí</h2>
-      <p>Hola, soy Yoider_dev, entusiasta de la ciberseguridad. Me especializo en la automatización de herramientas como Nmap, Aircrack-ng y Hping3. Me apasiona aprender, experimentar y crear herramientas personalizadas para auditorías.</p>
+  <header>
+    <h1>Yoider_Dev</h1>
+    <nav>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#scripts">Scripts</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>Hola, soy Yoider David Correa Pérez, apasionado por la ciberseguridad, automatización de herramientas ofensivas y desarrollo de scripts para pentesting. Este portafolio muestra mi trabajo técnico y mi progreso en el área.</p>
     </section>
 
-    <section>
-      <h2>🛠️ Scripts & Proyectos</h2>
-      <ul>
-        <li><a href="scripts/aircrack.sh" download>🔓 Script Aircrack-ng</a> – Automatiza escaneos y ataques</li>
-        <li><a href="scripts/nmap.sh" download>🛰️ Script Nmap</a> – Escaneo de redes con múltiples opciones</li>
-        <li><a href="scripts/hping3.sh" download>💣 Script Hping3</a> – Pruebas de red y DDoS simulados</li>
-      </ul>
+    <section id="scripts">
+      <h2>Scripts</h2>
+
+      <div class="script-card">
+        <h3>airmenu.sh</h3>
+        <p>Script para gestionar ataques con Aircrack-ng mediante menú interactivo.</p>
+        <a class="btn" href="Scripts/airmenu.sh" target="_blank">Ver Script</a>
+      </div>
+
+      <div class="script-card">
+        <h3>nmapmenu.sh</h3>
+        <p>Script para realizar distintos tipos de escaneos con Nmap desde menú.</p>
+        <a class="btn" href="Scripts/nmapmenu.sh" target="_blank">Ver Script</a>
+      </div>
+
+      <div class="script-card">
+        <h3>hpingmenu.sh</h3>
+        <p>Interfaz de comandos para ataques personalizados con Hping3.</p>
+        <a class="btn" href="Scripts/hpingmenu.sh" target="_blank">Ver Script</a>
+      </div>
+
+      <div class="script-card">
+        <h3>msf-hack.sh</h3>
+        <p>Script para automatizar el uso de Metasploit con opciones de explotación.</p>
+        <a class="btn" href="Scripts/msf-hack.sh" target="_blank">Ver Script</a>
+      </div>
+
     </section>
 
-    <section>
-      <h2>📚 Laboratorios</h2>
-      <p>Estoy trabajando en laboratorios de TryHackMe y Hack The Box. ¡Pronto compartiré mis write-ups!</p>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>📧 Correo: yoider.dev@gmail.com</p>
+      <p>💼 GitHub: <a href="https://github.com/YoiderDev" class="btn" target="_blank">YoiderDev</a></p>
     </section>
+  </main>
 
-    <section>
-      <h2>📬 Contacto</h2>
-      <p>Email: yoider@correo.com (modifícalo si lo deseas)</p>
-      <p>GitHub: <a href="https://github.com/yoider_dev" target="_blank">yoider_dev</a></p>
-    </section>
-  </div>
+  <footer>
+    <p>&copy; 2025 Yoider_Dev. Todos los derechos reservados.</p>
+  </footer>
+
 </body>
 </html>
+
